@@ -1,0 +1,23 @@
+[
+    { "nmb": 22, "street": "Rue d'Audun", "town": "Esch-sur-Alzette", "region": "Sud", "country": "Luxembourg", "img": "./img/property.jpeg"},
+    { "nmb": 71, "street": "Av. Lucien Salentiny", "town": "Ettelbruck", "region": "Nord", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 282, "street": "Rte de Longwy", "town": "Belair", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 26, "street": "Rue d'Amsterdam", "town": "Belair", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 11, "street": "Rue de la Gare", "town": "Mamer", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 37, "street": "Parc d'Activites", "town": "Capellen", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 123, "street": "Rue de Strasbourg", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 456, "street": "Avenue de la Liberté", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 789, "street": "Rue des Remparts", "town": "Diekirch", "region": "Nord", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 555, "street": "Boulevard Royal", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 999, "street": "Rue du Commerce", "town": "Echternach", "region": "Est", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 888, "street": "Place de la Constitution", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 777, "street": "Rue de Hollerich", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 444, "street": "Rue de Bonnevoie", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 222, "street": "Rue de Clausen", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 888, "street": "Rue du Laboratoire", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 111, "street": "Rue de Vianden", "town": "Vianden", "region": "Nord", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 777, "street": "Rue de la Montagne", "town": "Echternach", "region": "Est", "country": "Luxembourg", "img": "./img/property.jpeg" },
+    { "nmb": 333, "street": "Rue de Luxembourg", "town": "Luxembourg City", "region": "Centre", "country": "Luxembourg", "img": "./img/property.jpeg" }
+]
+
+  

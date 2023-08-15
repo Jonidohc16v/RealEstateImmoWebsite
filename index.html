@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real Estate</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Find Your Dream Property</h1>
+        </header>
+
+        <main class="main"> 
+            <div id="app" class="app-container">
+                <div class="address-list" ref="addressList">
+                    <ul class="address-list__ul">
+                        <li v-for="(add, index) in address" :key="index" :class="{ 'selected': selectedAddressIndex != index, 'address-card': true }" @click="showAddressOnMap(add, index)">
+                            <h3 class="address-card__town">{{add.town}}</h3>
+                            <p class="address-card__details">{{add.nmb}}, {{add.street}}, {{add.region}}, {{add.country}}</p>
+                            <a v-if="selectedMarkerDetails === index" href="details.html">Click here for details</a>
+                        </li>                    
+                    </ul>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" v-model="searchQuery" 
+                    @input="debouncedSearchAddress" 
+                    placeholder="Search addresses"
+                    @keydown.down="highlightNextSuggestion"
+                    @keydown.up="highlightPreviousSuggestion"
+                    @keydown.enter="selectHighlightedSuggestion"
+                    autocomplete="off"
+                    ref="searchInput">
+
+                    <ul class="autocomplete" ref="autocompleteList">
+                        <li v-for="(suggestion, index) in autocompleteSuggestions"
+                        :key="index"
+                        :class="{'highlighted' :index === highlightedSuggestionIndex}"
+                        @click="autocompleteSuggestionClicked(suggestion)">
+                        {{suggestion.town}}, {{suggestion.nmb}}, {{suggestion.street}}
+                        </li>
+                    </ul>
+                </div>
+                <button v-if="isClicked" class="reset-button" @click="showAllandReset">Reset</button>        
+            </div>
+
+            <div id="map" class="map-container"></div>   
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">&copy; 2023 Real Estate Agency by Joni</p>
+        </footer>
+
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> 
+        <script src="./Map/map.js"></script>       
+        <script src="https://www.mapquestapi.com/sdk/js/v7.2.s/mqa.toolkit.js?key=678zEXbPdEgOCDddWd8XHWqDW4obzXXi"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>         
+        <script src="./data/adress.js"></script>    
+
+    </body>
+</html>

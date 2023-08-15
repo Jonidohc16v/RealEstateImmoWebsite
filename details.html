@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Property details</h1>
+    </header>
+    <main>
+        <div id="detailsApp">
+            <div>
+                <h3>{{ selectedAddress.town }}</h3>
+                <p>{{ selectedAddress.nmb }}, {{ selectedAddress.street }}</p>
+                <p>{{ selectedAddress.region }}, {{ selectedAddress.country }}</p>
+                <img :src="selectedAddress.img" alt="Property Image" style="width: 200px; height: 180px;"></img>
+            </div>
+            <a href="javascript:history.back()" class="back-link">Back to List</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2023 Real Estate Agency by Joni</p>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./data/details.js"></script>
+</body>
+</html>

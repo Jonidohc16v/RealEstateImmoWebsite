@@ -5,6 +5,7 @@ const app = Vue.createApp({
         };
     },
 
+    /*here we collect and show the data from the previous page on this new page */
     created() {
         const data = localStorage.getItem('selectedAddress');
         if (data) {

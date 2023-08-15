@@ -13,6 +13,7 @@
         </header>
 
         <main class="main"> 
+            <!-- div to display all the cards with the addresses -->
             <div id="app" class="app-container">
                 <div class="address-list" ref="addressList">
                     <ul class="address-list__ul">
@@ -24,6 +25,7 @@
                     </ul>
                 </div>
 
+                <!-- div with the search bar with autocomplete with the data from the Json file -->
                 <div class="search-bar">
                     <input type="text" v-model="searchQuery" 
                     @input="debouncedSearchAddress" 
@@ -42,6 +44,7 @@
                         {{suggestion.town}}, {{suggestion.nmb}}, {{suggestion.street}}
                         </li>
                     </ul>
+                <!-- div with the reset button -->
                 </div>
                 <button v-if="isClicked" class="reset-button" @click="showAllandReset">Reset</button>        
             </div>
